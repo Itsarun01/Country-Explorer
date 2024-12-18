@@ -1,7 +1,9 @@
 const Country = () => {
   return (
     <>
-      <div>Country</div>
+      <div>
+        <h1>Country</h1>
+      </div>
     </>
   );
 };
