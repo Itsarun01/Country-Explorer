@@ -28,12 +28,17 @@
     color: #fff;
   }
   
+  a {
+    text-decoration: none;
+  }
+
   li {
     list-style: none;
   }
-  
+
+
   a {
-    color: #000;
+    color : #000;
   
     &:hover {
       color: #2e86c1;
@@ -67,3 +72,65 @@
     margin-top: 1.6rem;
   }
   
+ /* App Layout  */
+
+ .container {
+  max-width: 120rem;
+  margin: 0 auto;
+ }
+
+ .grid {
+  display: grid;
+ }
+
+ .grid-two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* App Layout */
+
+
+/* Header */
+
+ header {
+   height: 8rem;
+   width: 100%;
+   background-color: var(--bg-color);
+   box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 10px -10px;
+    
+   & .container{
+    height: 8rem;
+   }
+ }
+
+ .navbar-grid {
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
+  height: 8rem;
+  padding: 0 3.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3.2rem;
+  color: #fff;
+
+  & li a {
+    color: #fff;
+  }
+}
+
+
+/* Hero Section */
+
+

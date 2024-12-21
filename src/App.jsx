@@ -1,20 +1,21 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
+import Home from "./Components/UI/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Country from "./pages/Country";
-import NoteFoundPage from "./pages/NoteFoundPage";
 import AppLayout from "./Components/Layout/AppLayout";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
+    errorElement: <ErrorPage />,
 
     children: [
       {
-        path: "/home",
+        path: "/",
         element: <Home />,
       },
       {
@@ -28,10 +29,6 @@ const router = createBrowserRouter([
       {
         path: "/country",
         element: <Country />,
-      },
-      {
-        path: "*",
-        element: <NoteFoundPage />,
       },
     ],
   },
