@@ -1,6 +1,6 @@
 import {FaArrowRightToBracket} from "react-icons/fa6";
 
-const Home = () => {
+const HeroSection = () => {
   return (
     <>
       <main className="hero-section main">
@@ -30,4 +30,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HeroSection;
