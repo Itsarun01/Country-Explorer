@@ -41,7 +41,7 @@
     color : #000;
   
     &:hover {
-      color: #2e86c1;
+      color: rgb(255, 242, 3);
     }
   }
   
@@ -251,3 +251,47 @@ nav ul {
 
 
 /* About Section End  */
+
+/* contact section  */
+
+.section-contact {
+  margin: 5rem auto;
+
+  & hr {
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+}
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    width: 100%;
+    max-width: 48rem;
+
+    & input,
+    & textarea {
+      font-family: "urbanist";
+      background-color: #000;
+      font-size: 1.6rem;
+      color: #fff;
+      outline: none;
+      border: 0.1rem solid rgba(255, 255, 255, 0.4);
+      padding: 1.2rem 1.6rem;
+      border-radius: 0.3rem;
+      -webkit-border-radius: 0.3rem;
+      -moz-border-radius: 0.3rem;
+      -ms-border-radius: 0.3rem;
+      -o-border-radius: 0.3rem;
+    }
+  }
+}
+
+.submit-btn{
+  justify-content: center;
+}  
+
+/* contact section end  */
