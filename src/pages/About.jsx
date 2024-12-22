@@ -11,21 +11,19 @@ const About = () => {
             country;
           return (
             <div className="card" key={id}>
-              <div className="container-card blue-box">
-                <p className="card-title">{countryName}</p>
+              <div className="container-card bg-yellow-box">
+                <p className="card-title"> {countryName}</p>
                 <p>
-                  <span className="card-description">Capital:{capital}</span>
+                  <span className="card-description">Capital : {capital}</span>
                 </p>
                 <p>
                   <span className="card-description">
-                    Population:
-                    {population}
+                    Population : {population}
                   </span>
                 </p>
                 <p>
                   <span className="card-description">
-                    Interesting Fact:
-                    {interestingFact}
+                    Interesting Fact : {interestingFact}
                   </span>
                 </p>
               </div>
