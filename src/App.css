@@ -294,4 +294,59 @@ nav ul {
   justify-content: center;
 }  
 
-/* contact section end  */
+/* contact section end  *
+
+
+/* footer Code */
+
+.footer-contact {
+  height: 10rem;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+
+  & .icon {
+    color: rgb(255, 242, 3);
+    font-size: 3.6rem;
+
+    & .icon:nth-child(2) {
+      rotate: 90deg;
+    }
+  }
+}
+
+.footer-contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  & p {
+    font-size: 1.5rem;
+    color: #757575;
+  }
+}
+
+
+& p:first-child {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.footer-section {
+background: #151414;
+position: relative;
+}
+
+.copyright-area {
+background: #202020;
+padding: 25px 0;
+text-align: center;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #fff;
+
+}
