@@ -9,7 +9,7 @@ const Header = () => {
           <div className="grid navbar-grid">
             <div className="Logo">
               <NavLink to="/">
-                <h1>WorldAtlas</h1>
+                <h1 className="logo">WorldAtlas</h1>
               </NavLink>
             </div>
             <nav>

@@ -130,6 +130,10 @@ nav ul {
   }
 }
 
+/* .logo{
+  color : gold
+} */
+
  /* Header End  */
 
 
@@ -180,6 +184,7 @@ nav ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
+  margin-bottom: 5rem;
 }
 
 .container-title {
@@ -198,6 +203,7 @@ nav ul {
   border: 0;
   width: 100%;
   margin-inline: auto;
+  /* margin-bottom: 5rem; */
 }
 
 .container-card {
