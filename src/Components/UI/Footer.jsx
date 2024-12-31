@@ -2,7 +2,9 @@ import FooterData from "../../api/FooterData.json";
 import {FaLocationDot} from "react-icons/fa6";
 import {BiSolidPhoneCall} from "react-icons/bi";
 import {MdMarkEmailUnread} from "react-icons/md";
+
 const Footer = () => {
+  
   const footerIcons = {
     MdPlace: <FaLocationDot />,
     IoCallSharp: <BiSolidPhoneCall />,

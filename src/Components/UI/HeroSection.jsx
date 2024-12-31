@@ -1,4 +1,5 @@
 import {FaArrowRightToBracket} from "react-icons/fa6";
+import {NavLink} from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -13,9 +14,11 @@ const HeroSection = () => {
               Discover the history, culture, and beauty of every nation. Sort,
               search, and filter through countries to find the details you need.
             </p>
-            <button className="">
-              Start Exploring <FaArrowRightToBracket />
-            </button>
+            <NavLink to="/country">
+              <button className="">
+                Start Exploring <FaArrowRightToBracket />
+              </button>
+            </NavLink>
           </div>
           <div className="hero-image">
             <img

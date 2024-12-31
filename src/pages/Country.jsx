@@ -1,4 +1,8 @@
+import  {useEffect} from "react";
 const Country = () => {
+  useEffect(() => {
+    
+  }, []);
   return (
     <>
       <div>

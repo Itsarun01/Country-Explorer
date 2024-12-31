@@ -36,7 +36,6 @@
     list-style: none;
   }
 
-
   a {
     color : #000;
   
@@ -73,7 +72,6 @@
   }
   
  /* App Layout  */
-
  .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -97,7 +95,6 @@
 
 /* App Layout */
 
-
 /* Header */
 
  header {
@@ -110,6 +107,10 @@
     height: 8rem;
    }
  }
+
+/* .logo{
+  color : gold
+} */
 
  .navbar-grid {
   grid-template-columns: 0.5fr 1fr;
@@ -129,13 +130,7 @@ nav ul {
     color: #fff;
   }
 }
-
-/* .logo{
-  color : gold
-} */
-
  /* Header End  */
-
 
 /* Hero Section */
 
@@ -165,12 +160,9 @@ nav ul {
  
 }
 
-
-
 .container .banner-image {
   width: 100%;
 }
-
 
 /* Hero Section End */
 
@@ -214,11 +206,9 @@ nav ul {
   padding: 40px;
 }
 
-
 .bg-yellow-box {
   position: relative;
 }
-
 
 .bg-yellow-box::after{
   position: absolute;
@@ -230,7 +220,6 @@ nav ul {
   z-index: -1;
   border-radius: 45px;
 }
-
 
 .bg-yellow-box::after {
   background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
@@ -253,7 +242,6 @@ nav ul {
   font-size: 16px;
   max-width: 470px;
 }
-
 
 /* About Section End  */
 
@@ -311,7 +299,7 @@ nav ul {
   align-items: center;
 
   & .icon {
-    color: rgb(255, 242, 3);
+    color: #fff;
     font-size: 3.6rem;
 
     & .icon:nth-child(2) {
@@ -331,13 +319,11 @@ nav ul {
   }
 }
 
-
 & p:first-child {
   font-size: 1.7rem;
   font-weight: bold;
   color: #fff;
 }
-
 
 .footer-section {
 background: #151414;
