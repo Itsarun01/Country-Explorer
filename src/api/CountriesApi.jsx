@@ -1,13 +1,12 @@
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: "https://restcountries.com/v3.1/",
-});
-
-// Get Method
-
-export const getCountries = () => {
-  api.get("/all?fields=name,capital,population,region,flags").then((res) => {
-    return res.data;
-  });
+export const getCountries = async () => {
+  try {
+    const response = await axios.get(
+      "https://restcountries.com/v3.1/all?fields=name,population,region,capital,flags"
+    );
+    return response.data;
+  } catch (error) {
+    console.log(error.message);
+  }
 };
