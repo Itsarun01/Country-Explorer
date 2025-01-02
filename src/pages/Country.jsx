@@ -1,6 +1,8 @@
 import {useEffect, useTransition, useState} from "react";
 
 import {getCountries} from "../api/CountriesApi";
+import Loader from "../Components/UI/Loader";
+
 const Country = () => {
   const [isPending, startTransition] = useTransition();
 
@@ -13,8 +15,7 @@ const Country = () => {
     });
   }, []);
 
-  if (isPending) return <h1>Loading...</h1>;
-
+  if (isPending) return <Loader />;
   return (
     <>
       <h1>Countries</h1>

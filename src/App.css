@@ -93,6 +93,26 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+/* Loading Css  */
+
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(90deg,#C02942 calc(50% + 0.5ch),#000 0) right/calc(200% + 1ch) 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: l7 2s infinite steps(11);
+}
+.loader:before {
+  content:"Loading..."
+}
+@keyframes l7 {to{background-position: left}}
+
+/* Loading Css  */
+
 /* App Layout */
 
 /* Header */
