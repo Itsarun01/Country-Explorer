@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 const CountryCard = ({country}) => {
   return (
-    <>
-      <li>{country.name}</li>
-    </>
+    <li>
+      <h3>{country.name}</h3>
+    </li>
   );
 };
 

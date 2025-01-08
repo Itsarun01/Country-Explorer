@@ -5,13 +5,14 @@ import CountryCard from "../Components/UI/CountryCard";
 
 const Country = () => {
   const [isPending, startTransition] = useTransition();
-
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
     startTransition(async () => {
       const res = await getCountries();
-      setCountries(res.data);
+
+      console.log(res.data);
+      //setCountries(res);
     });
   }, []);
 
@@ -20,8 +21,8 @@ const Country = () => {
   return (
     <section className="country-section">
       <ul className="grid grid-four-col">
-        {countries.map((country, i) => {
-          return <CountryCard key={i} country={country} />;
+        {countries.map((country, index) => {
+          return <CountryCard key={index} country={country} />;
         })}
       </ul>
     </section>
