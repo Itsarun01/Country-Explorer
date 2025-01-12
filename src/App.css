@@ -363,3 +363,25 @@ font-size: 14px;
 color: #fff;
 
 }
+
+/* footer Code End */
+
+/* Country Card Code */
+
+.country-card {
+  margin-top: 3.2rem;
+}
+.country-section {
+  margin: 6.4rem auto 9.6rem auto;
+  & .grid {
+    gap: 3.2rem;
+    max-width: 132rem;
+    margin: auto;
+  }
+
+  & img {
+    width: 100%;
+    max-width: 50rem;
+    height: 16rem;
+  }
+}
