@@ -15,8 +15,6 @@ const Country = () => {
     });
   }, []);
 
-  console.log(countries);
-
   if (isPending) return <Loader />;
   return (
     <section className="country-section">
