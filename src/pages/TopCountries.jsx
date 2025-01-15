@@ -1,9 +1,9 @@
 import CountryFactsData from "../api/CountryData.json";
-const About = () => {
+const TopCountries = () => {
   return (
     <>
       <section className="section-about container">
-        <h2 className="container-title">Here Are Interesting Facts</h2>
+        <h2 className="container-title">Here Are Top Countries</h2>
       </section>
       <div className="gradient-cards container">
         {CountryFactsData.map((country) => {
@@ -35,4 +35,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default TopCountries;

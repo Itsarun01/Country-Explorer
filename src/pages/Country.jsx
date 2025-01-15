@@ -15,6 +15,9 @@ const Country = () => {
     });
   }, []);
 
+
+  
+
   if (isPending) return <Loader />;
   return (
     <section className="country-section">
