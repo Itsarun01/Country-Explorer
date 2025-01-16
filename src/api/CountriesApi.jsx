@@ -12,8 +12,10 @@ export const getCountries = () => {
   return api.get("/all?fields=name,population,region,capital,flags");
 };
 
-// // Https request to get a single country
+// Https request to get a single country
 
-// export const getCountry = (name) => {
-//   return api.get(`/name/${name}?fullText=true`);
-// };
+export const getCountry = (name) => {
+  return api.get(
+    `/name/${name}?fullText=true&fields=name,population,region,subregion,capital,tld,borders,flags,languages,currencies`
+  );
+};
