@@ -90,6 +90,14 @@
 }
 @keyframes l7 {to{background-position: left}}
 
+.loader-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+}
+
 /* Loader Css  */
   
  /* App Layout  */
