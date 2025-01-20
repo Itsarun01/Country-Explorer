@@ -1,5 +1,4 @@
 const Contact = () => {
-  
   const handleFormSubmit = (formData) => {
     const formInputData = Object.fromEntries(formData.entries());
     console.log(formInputData);
@@ -35,7 +34,7 @@ const Contact = () => {
               placeholder="Enter Your Message"
               autoComplete="false"
             ></textarea>
-            <button type="submit" value="send" className="submit-btn">
+            <button type="submit" value="send" className="submit-btn ">
               Send
             </button>
           </form>

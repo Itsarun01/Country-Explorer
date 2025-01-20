@@ -20,7 +20,7 @@ const HeroSection = () => {
               </button>
             </NavLink>
           </div>
-          <div className="hero-image">
+          <div className="hero-image bg-yellow-box">
             <img
               className="banner-image"
               src="/images/img.png"

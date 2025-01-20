@@ -4,7 +4,6 @@ import {BiSolidPhoneCall} from "react-icons/bi";
 import {MdMarkEmailUnread} from "react-icons/md";
 
 const Footer = () => {
-  
   const footerIcons = {
     MdPlace: <FaLocationDot />,
     IoCallSharp: <BiSolidPhoneCall />,
@@ -35,6 +34,8 @@ const Footer = () => {
               <p>Copyright &copy; 2024, All Right Reserved</p>
             </div>
           </div>
+
+          
         </div>
       </footer>
     </>
