@@ -15,7 +15,7 @@ const HeroSection = () => {
               search, and filter through countries to find the details you need.
             </p>
             <NavLink to="/country">
-              <button className="">
+              <button className="bg-yellow-box">
                 Start Exploring <FaArrowRightToBracket />
               </button>
             </NavLink>

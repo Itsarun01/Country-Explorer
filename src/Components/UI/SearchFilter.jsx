@@ -13,14 +13,14 @@ const SearchFilter = ({search, setSearch, filter, setFilter}) => {
 
   return (
     <>
-      <section className="section-searchFilter container">
+      <section className="section-searchFilter container container-card  bg-yellow-box ">
         <input
+          className="search-bar"
           type="text"
           placeholder="Search Bar"
           value={search}
           onChange={inputHandler}
         />
-
         <div>
           <select
             className="select-section"

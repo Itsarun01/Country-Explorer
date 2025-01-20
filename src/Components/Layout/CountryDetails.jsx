@@ -23,7 +23,7 @@ const CountryDetails = () => {
 
   return (
     <>
-      <section className="card country-details-card container">
+      <section className="card country-details-card container bg-yellow-box">
         <div className="container-card bg-white-box">
           {country && (
             <div className="country-image grid grid-two-col">
@@ -33,49 +33,58 @@ const CountryDetails = () => {
                 className="flag"
               />
               <div className="country-content">
-                <p className="card-title"> {country.name.official} </p>
+                <span className="card-title"> {country.name.official} </span>
 
                 <div className="infoContainer">
                   <p>
-                    <span className="card-description"> Native Names : </span>
-                    {Object.keys(country.name.nativeName)
-                      .map((key) => country.name.nativeName[key].common)
-                      .join(", ")}
+                    <span className="card-description">
+                      Native Names :{" "}
+                      {Object.keys(country.name.nativeName)
+                        .map((key) => country.name.nativeName[key].common)
+                        .join(", ")}
+                    </span>
                   </p>
                   <p>
-                    <span className="card-description"> Population : </span>
-                    {country.population.toLocaleString()}
+                    <span className="card-description">
+                      Population : {country.population.toLocaleString()}
+                    </span>
                   </p>
                   <p>
-                    <span className="card-description"> Region : </span>
-                    {country.region}
+                    <span className="card-description">
+                      Region : {country.region}
+                    </span>
                   </p>
                   <p>
-                    <span className="card-description"> Sub Region : </span>
-                    {country.subregion}
+                    <span className="card-description">
+                      Sub Region : {country.subregion}
+                    </span>
                   </p>
                   <p>
-                    <span className="card-description"> Capital : </span>
-                    {country.capital}
+                    <span className="card-description">
+                      Capital : {country.capital}
+                    </span>
                   </p>
 
                   <p>
                     <span className="card-description">
-                      Top Level Domain :{" "}
+                      Top Level Domain : {country.tld[0]}
                     </span>
-                    {country.tld[0]}
                   </p>
                   <p>
-                    <span className="card-description"> Currencies : </span>
-                    {Object.keys(country.currencies)
-                      .map((curElem) => country.currencies[curElem].name)
-                      .join(", ")}
+                    <span className="card-description">
+                      Currencies :{" "}
+                      {Object.keys(country.currencies)
+                        .map((curElem) => country.currencies[curElem].name)
+                        .join(", ")}
+                    </span>
                   </p>
                   <p>
-                    <span className="card-description">Languages : </span>
-                    {Object.keys(country.languages)
-                      .map((key) => country.languages[key])
-                      .join(", ")}
+                    <span className="card-description">
+                      Languages :{" "}
+                      {Object.keys(country.languages)
+                        .map((key) => country.languages[key])
+                        .join(", ")}
+                    </span>
                   </p>
                 </div>
               </div>
