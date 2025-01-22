@@ -527,9 +527,8 @@ color: #fff;
 /* Header Media Query Start */
 
 
- @media screen and (max-width : 375px) {
+ @media screen and (max-width : 380px) {
   
-  /* for header  */
 
   .navbar-grid {
     padding: 0 1.6rem;
@@ -544,10 +543,7 @@ color: #fff;
     font-size: 2.4rem;
   }
 
-
-
  }
-
 
  /* for nav 480 px  */
 
@@ -605,6 +601,96 @@ color: #fff;
 
 
 /* Header Media Query End */
+
+/* Hero Section Media Query Start */
+
+@media screen and (max-width: 768px) {
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+
+    & .hero-image {
+     display: none
+    }
+
+  }
+
+  .heading-xl {
+    font-size: 5rem;
+   text-align: center;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+
+  .hero-section .container {
+    margin: 3.2rem auto;
+  }
+
+ .hero-content {
+   text-align: center;
+
+   & button{
+      margin: 0 auto;
+      
+   }
+   
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .heading-xl {
+    font-size: 4rem;
+  }
+
+  .paragraph {
+    font-size: 1.6rem;
+  }
+
+  .hero-section .container {
+    padding: 1.6rem;
+    margin: 3.2rem auto;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+  .heading-xl {
+    font-size: 3.2rem;
+  }
+
+  .paragraph {
+    font-size: 1.4rem;
+  }
+
+  .hero-section .container {
+    padding: 1.6rem;
+    margin: 3.2rem auto;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+}
+
+/* Hero Section Media Query End */
 
 /*Responsive Css */
 
