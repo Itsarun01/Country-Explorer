@@ -168,74 +168,9 @@ nav ul {
   display: none;
   align-items: center;
   font-size: 2.4rem;
-  
+
 }
 
-.menu-icon{
-   font-size: 3.5rem ;
-}
-
-
-
-  /* Responsive Code for Navbar */
-
- 
-
-  @media screen and (max-width: 768px) {
-
-   .navbar-grid{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-   }
-    
-    .navbar-grid {
-      grid-template-columns: 1fr;
-      justify-content: space-between;
-      padding: 0 2.4rem;
-      align-items: center;
-      align-content: center;
-    }
-
-    .ham-menu {
-      display: block;
-      font-size: 2.4rem;
-      color: #fff;
-      width: fit-content;
-      
-    }
-
-    nav ul {
-      display: none;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      position: absolute;
-      top: 8rem;
-      left: 0;
-      width: 100%;
-      background-color: var(--bg-color);
-      flex-direction: column;
-      gap: 1.6rem;
-      padding: 3.2rem;
-      border-top: 1px solid rgba(93, 92, 92, 0.1);
-
-    }
-
-    nav ul.active {
-      display: flex;
-    
-    }
-
-    nav ul li a {
-      color: #fff;
-      font-size: 2.5rem;
-    }
-
-  }
-   
-
-   /* Responsive Code for Navbar */
 
  /* Header End  */
 
@@ -270,6 +205,7 @@ nav ul {
 .container .banner-image {
   width: 100%;
 }
+ 
 
 /* Hero Section End */
 
@@ -393,8 +329,6 @@ nav ul {
   justify-content: center;
 
 }  
-
-
 
 /* contact section end  *
 
@@ -581,10 +515,97 @@ color: #fff;
   letter-spacing: 0.1rem;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.5);
+
 }
+
 
 /* Search Bar section End  */
 
 
 /* Responsive Css */
+
+/* Header Media Query Start */
+
+
+ @media screen and (max-width : 375px) {
+  
+  /* for header  */
+
+  .navbar-grid {
+    padding: 0 1.6rem;
+    
+  }
+
+  nav ul {
+    gap: 1.6rem;
+  }
+
+  .ham-menu {
+    font-size: 2.4rem;
+  }
+
+
+
+ }
+
+
+ /* for nav 480 px  */
+
+  @media screen and (max-width: 480px) {
+ 
+    
+ 
+ 
+  }
+
+
+
+@media screen and (max-width: 768px) {
+
+   
+  ul{
+    display: none;
+  }  
+
+  .ham-menu {
+    display: flex;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 0
+
+  }
+
+  .navbar-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 8rem;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--bg-color);
+    gap: 2.4rem;
+    padding: 3.2rem;
+  }
+
+  .web-nav{
+    display: none;
+  }
+
+
+}
+
+
+/* Header Media Query End */
+
+/*Responsive Css */
+
 

@@ -1,21 +1,12 @@
 import {NavLink} from "react-router-dom";
 import "../../App.css";
-import {useState} from "react";
-
 import {TiThMenu} from "react-icons/ti";
-
+import {useState} from "react";
 const Header = () => {
-  const [menu, setMenu] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
-  const handleMenuClick = () => {
-    return () => {
-      setMenu(!menu);
-      if (menu) {
-        document.body.style.overflow = "active";
-      } else {
-        document.body.style.overflow = "hidden";
-      }
-    };
+  const handleToggle = () => {
+    setToggle(!toggle);
   };
 
   return (
@@ -28,9 +19,8 @@ const Header = () => {
                 <h1>WorldAtlas</h1>
               </NavLink>
             </div>
-
-            <nav>
-              <ul className={menu ? "active" : "hidden"}>
+            <nav className={toggle ? "mob-nav" : "web-nav"}>
+              <ul>
                 <li>
                   <NavLink to="/">Home</NavLink>
                 </li>
@@ -45,8 +35,8 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <div className="ham-menu" onClick={handleMenuClick()}>
-              <TiThMenu className="menu-icon" />
+            <div className="ham-menu" onClick={handleToggle}>
+              <TiThMenu />
             </div>
           </div>
         </div>

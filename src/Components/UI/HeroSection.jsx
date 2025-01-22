@@ -15,12 +15,12 @@ const HeroSection = () => {
               search, and filter through countries to find the details you need.
             </p>
             <NavLink to="/country">
-              <button className="bg-yellow-box">
+              <button>
                 Start Exploring <FaArrowRightToBracket />
               </button>
             </NavLink>
           </div>
-          <div className="hero-image bg-yellow-box">
+          <div className="hero-image ">
             <img
               className="banner-image"
               src="/images/img.png"
