@@ -13,7 +13,7 @@ const SearchFilter = ({search, setSearch, filter, setFilter}) => {
 
   return (
     <>
-      <section className="section-searchFilter container container-card  bg-yellow-box ">
+      <section className="section-searchFilter container container-card ">
         <input
           className="search-bar"
           type="text"

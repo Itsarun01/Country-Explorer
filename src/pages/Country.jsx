@@ -42,6 +42,7 @@ const Country = () => {
   return (
     <section className="container country-section">
       <SearchFilter
+        className="search-filter"
         search={search}
         setSearch={setSearch}
         filter={filter}

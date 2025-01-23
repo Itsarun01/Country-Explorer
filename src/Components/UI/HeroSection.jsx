@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <>
       <main className="hero-section main">
-        <div className="container grid grid-two-col">
+        <div className="container grid grid-two-col hero-query">
           <div className="hero-content">
             <h1 className="heading-xl">
               Explore the World, One Country at a Time.
