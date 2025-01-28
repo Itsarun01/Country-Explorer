@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const SearchFilter = ({search, setSearch, filter, setFilter}) => {
   const inputHandler = (e) => {
     e.preventDefault();
