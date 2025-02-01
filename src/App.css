@@ -582,34 +582,20 @@ color: #fff;
 
 
 @media screen and (max-width: 480px) {
-  .Logo h1{
-    font-size: 3rem;
-  }
- 
-}
-
-
- @media screen and (max-width : 380px) {
-  
 
   .navbar-grid {
-    padding: 0 1.6rem;
-    
+    padding: 0;
+    padding-left: 0;
   }
 
   nav ul {
-    gap: 1.6rem;
+    padding: 1.6rem;
   }
 
   .ham-menu {
-    font-size: 2.4rem;
+    padding: 0;
   }
-
- 
  }
-
-
-
 /* Header Media Query End */
 
 /* Hero Section Media Query Start */
@@ -660,7 +646,7 @@ color: #fff;
 @media screen and (max-width: 768px) {
   
   .hero-query {
-    margin: 6.4rem auto;
+    margin: 4rem auto;
     gap: 3.2rem;
   }
 
@@ -710,7 +696,38 @@ color: #fff;
     gap: 2rem;
   }
 
+  .hero-query{
+    margin: 2rem auto;
+  }
+
 }
+
+@media screen and (max-width: 350px) {
+   
+  .hero-content .heading-xl {
+    font-size: 3rem;
+  }
+
+  .hero-content .paragraph {
+    font-size: 1.6rem;
+  }
+
+  .hero-content button {
+    height: 5rem;
+    margin-top: 1rem;
+  }
+
+  .hero-content {
+    gap: 1.6rem;
+  }
+
+  .hero-query{
+    margin: 1rem 0;
+  }
+
+  
+}
+
 
 /* Hero Section Media Query End */
 
