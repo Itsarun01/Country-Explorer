@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 import {NavLink} from "react-router-dom";
 
 const CountryCard = ({countryData}) => {
   const {name, population, region, capital, flags} = countryData;
   return (
     <>
+    
       <li className="country-card card bg-yellow-box">
         <div className="container-card bg-white-box">
           <img src={flags.svg} />

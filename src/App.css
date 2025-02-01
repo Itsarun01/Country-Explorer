@@ -685,7 +685,7 @@ color: #fff;
 @media screen and (max-width: 480px) {
   
   .hero-content .heading-xl {
-    font-size: 4.2rem;
+    font-size: 4rem;
   }
 
   .hero-content .paragraph {
@@ -697,7 +697,7 @@ color: #fff;
   }
 
   .hero-query{
-    margin: 2rem auto;
+    margin-top: 1rem;
   }
 
 }
@@ -710,11 +710,13 @@ color: #fff;
 
   .hero-content .paragraph {
     font-size: 1.6rem;
+
   }
 
   .hero-content button {
     height: 5rem;
-    margin-top: 1rem;
+    
+    
   }
 
   .hero-content {
@@ -722,24 +724,40 @@ color: #fff;
   }
 
   .hero-query{
-    margin: 1rem 0;
-  }
-
-  
+    margin-top: 1rem;
+  }  
 }
 
 
 /* Hero Section Media Query End */
 
-/* About Section Media Query Start */
+/* Top Country Section Media Query Start */
 
 
 @media screen and (max-width: 1200px) {
+
+  .navbar-grid{
+    padding: 0;
+  }
+
+  .container-title{
+     margin-top: 1rem;
+    }
  
 
   .container {
-    margin: 0 2rem;
+    margin: 0 3rem;
   }
+
+  .section-about{
+    margin: 6rem auto;
+  }
+
+
+  .gradient-cards{
+    margin-bottom: 5rem;
+  }
+ 
 
 }
 
@@ -753,22 +771,60 @@ color: #fff;
     margin: 0 2.5rem;
   }
 
+  .section-about{
+    margin: 4rem auto;
+  }
+
+  .gradient-cards{
+    margin-bottom: 5rem;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
+
+  
+  
+  .container-title{
+    font-size: 3.5rem;
+
+  }
+
+  .container {
+    margin: 0 3rem;
+  }
+
   .gradient-cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-about{
+    margin: 4rem auto;
+
+  }
+
+  .gradient-cards{
+    margin-bottom: 5rem;
   }
 }
 
 @media screen and (max-width: 480px) {
 
+  section-about{
+    margin: 3rem auto;
+  }
 
   .container-title {
     font-size: 3rem;
+    margin-top: 4rem;
   
   }
 
+  .container {
+    margin: 0 3rem;
+  }
+
+  
   .card-title {
     font-size: 2.4rem;
   }
@@ -776,10 +832,42 @@ color: #fff;
   .card-description {
     font-size: 1.6rem;
   }
+
+  .gradient-cards{
+    margin-bottom: 5rem;
+  }
+
 }
 
-/* About Section Media Query End */
+@media screen and (max-width: 380px) {
 
+  .section-about{
+    margin: 4rem auto;
+  }
+ 
+
+  .container-title {
+    font-size: 3rem;
+    margin: 3rem auto;
+  
+  }
+
+  .card-title {
+    font-size: 2rem;
+  }
+
+  .card-description {
+    font-size: 1.4rem;
+  }
+
+  .gradient-cards{
+    margin-bottom: 5rem;
+  }
+  
+
+}
+
+/* Top Country Section Media Query End */
 
 /* Contact Section Media Query Start */
 
@@ -800,8 +888,6 @@ color: #fff;
   .contact-wrapper form {
     gap: 1.6rem;
   }
-
-
 
 }
 
@@ -877,32 +963,41 @@ color: #fff;
   }
 }
 
-@media screen and (max-width : 620px) {
+@media screen and (max-width : 550px) {
   .country-section .grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .country-section img {
     width: 100%;
-    max-width: 30rem;
-    height: 16rem;
-  }
-
-
-
-  .country-details-card img {
-    width: 100%;
     max-width: 20rem;
     height: 16rem;
   }
+
 }
 
 @media screen and (max-width: 500px) {
+
+  .country-section .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
  
   .country-section img {
-    width: 100%;
+    width: 240px;
     max-width: 20rem;
     height: 16rem;
+  }
+  .section-searchFilter{
+    margin: 4rem 0;
+  }
+
+
+  .select-section{
+    width: 100px;
+  }
+
+  .search-bar{
+    width: 120px;
   }
 
   .country-details-card img {
@@ -938,6 +1033,8 @@ color: #fff;
     font-size: 1.6rem;
   }
 }
+
+
 
 
 /* Responsive Css For Footer End */
