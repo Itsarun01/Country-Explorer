@@ -23,10 +23,10 @@ const CountryDetails = () => {
 
   return (
     <>
-      <section className="card country-details-card container bg-yellow-box">
-        <div className="container-card bg-white-box">
+      <section className="card country-details-card container ">
+        <div className="container-card  card-flex card-border">
           {country && (
-            <div className="country-image grid grid-two-col">
+            <div className="country-image grid grid-two-col ">
               <img
                 src={country.flags.svg}
                 alt={country.flags.alt}
@@ -80,7 +80,7 @@ const CountryDetails = () => {
                   </p>
                   <p>
                     <span className="card-description">
-                      Languages :{" "}
+                      Languages :
                       {Object.keys(country.languages)
                         .map((key) => country.languages[key])
                         .join(", ")}

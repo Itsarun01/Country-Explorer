@@ -13,7 +13,7 @@ const TopCountries = () => {
             country;
           return (
             <div className="card" key={id}>
-              <div className="container-card bg-yellow-box">
+              <div className="container-card card-border">
                 <p className="card-title"> {countryName}</p>
                 <p>
                   <span className="card-description">Capital : {capital}</span>

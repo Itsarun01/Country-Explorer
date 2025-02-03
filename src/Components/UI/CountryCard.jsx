@@ -5,9 +5,8 @@ const CountryCard = ({countryData}) => {
   const {name, population, region, capital, flags} = countryData;
   return (
     <>
-    
-      <li className="country-card card bg-yellow-box">
-        <div className="container-card bg-white-box">
+      <li className="country-card card ">
+        <div className="container-card card-border">
           <img src={flags.svg} />
 
           <div className="countryInfo">

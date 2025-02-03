@@ -14,7 +14,9 @@ const SearchFilter = ({search, setSearch, filter, setFilter}) => {
 
   return (
     <>
-      <section className="section-searchFilter container container-card ">
+      <section className="section-searchFilter container container-card search-filter-shadow">
+        {" "}
+        ">
         <input
           className="search-bar"
           type="text"
