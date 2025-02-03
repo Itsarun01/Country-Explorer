@@ -16,7 +16,7 @@ const Header = () => {
           <div className="grid navbar-grid">
             <div className="Logo">
               <NavLink to="/">
-                <h1>Country Explorer</h1>
+                <h3>Country Explorer</h3>
               </NavLink>
             </div>
             <nav className={toggle ? "mob-nav" : "web-nav"}>
