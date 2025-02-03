@@ -66,10 +66,6 @@ In the project directory, you can run:
 
 Contributions are welcome! If you have any improvements or new features to suggest, feel free to create a pull request or open an issue.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
