@@ -2,18 +2,6 @@
 
 Country Explorer is a web application that allows users to explore information about different countries around the world. The application is built using React and Vite, and it leverages various APIs to fetch and display country data, including details such as population, capital, languages, and more.
 
-##From the Country-Explorer repository, you can learn the following:
-
-Building Web Applications: The project utilizes React and Vite to create a web application, providing a practical example of how to set up and develop a React-based project with Vite.
-
-API Integration: The application fetches data from the Rest Countries API, demonstrating how to integrate and use external APIs to retrieve and display data.
-
-Web Technologies: The repository uses JavaScript, CSS, and HTML, giving you insight into how these technologies work together in a modern web application.
-
-Project Structure and Setup: You can learn about project setup, including how to clone the repository, install dependencies, and run the development server.
-
-Contributing to Open Source: The repository includes guidelines for contributing, which can help you understand the process of contributing to open-source projects.
-
 ## Features
 - Search for countries by name.
 - View detailed information about each country.
